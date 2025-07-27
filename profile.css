@@ -1,0 +1,126 @@
+.container{
+    width: 500px;
+    height: 500px;
+    border-radius: 15%;
+    overflow: hidden;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    margin-left: 8em;
+    margin-top: 5em;
+}
+p{
+    color: aqua;
+    background-color: rgba(233, 41, 41, 0.916);
+}
+.profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 16em;
+    margin-right: 16em;
+    margin-top: 10em;
+    position: absolute;
+    margin-bottom: 12em;
+    bottom: 25%;
+    transform: translateX(25%);
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input[type="file"] {
+    display: none;
+}
+.saved{
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
+    overflow: hidden;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300%;
+    transform: translateX(300%);
+    margin-top: -15em;
+
+}
+.friends{
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
+    overflow: hidden;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 409%;
+    transform: translateX(409%);
+    margin-top: -6.001em;
+}
+.downloads{
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
+    overflow: hidden;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300%;
+    transform: translateX(300%);
+    margin-top: 1em; 
+}
+.help{
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
+    overflow: hidden;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 409%;
+    transform: translateX(409%);
+    margin-top: -6.001em;
+}
+.downloads img{
+    width: 48px;
+    height: 48px;
+}
+.friends img{
+    width: 48px;
+    height: 48px;    
+}
+.help img{
+    width: 48px;
+    height: 48px;
+}
+.saved img{
+    width: 48px;
+    height: 48px;
+}
+.nav img{
+    width: 42px;
+    height: 42px;
+        border-radius: 15%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300%;
+    transform: translateX(300%);
+    margin-bottom: -3em;
+}
