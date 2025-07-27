@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user info</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <style>
+        #setting{
+            margin-left: 26em;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+        }
+        #plus{
+            margin-left: 16em;
+        }
+        #comments{
+            margin-left: 10em;
+        }
+        #home{
+            margin-left: 2em;
+        }
+        .nav{
+            margin-top: 3em;
+            position: absolute;
+            padding: 2px;
+        }
+        #comments{
+            margin-left: 9em;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="home.png" alt="" id="home">
+         <img src="setting.png" alt="" id="setting">
+          <img src="plus.png" alt="" id="plus">
+           <img src="comments.png" alt="" id="comments">
+    </div>
+    <div class="container"></div>
+    <label for="upload photo">
+<div class="profile">
+    <img src="" alt="" id="profile pic"><br>
+
+
+</div>
+</label>
+<input type="file" id="photo" accept="image" onchange="image(event)">
+<div class="saved">
+    <img src="bookmark.png" alt="">
+</div>
+<div class="friends">
+    <img src="friends.png" alt="">
+</div>
+<div class="downloads">
+    <img src="downloads.png" alt="">
+</div>
+<div class="help">
+    <img src="help-web-button.png" alt="">
+</div>
+<script>
+    function image(event) {
+        const reader = new FileReader ();
+        reader.onload = function(){
+            const output =
+            document.getElementById(`profile pic`);
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0
+    ]);
+        }
+    
+</script>
+
+
+</body>
+</html>
